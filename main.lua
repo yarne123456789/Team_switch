@@ -1,3 +1,7 @@
+if game:GetService("RunService"):IsStudio()  then
+	script:Destroy()
+ end
+
 local event = game.ReplicatedStorage.team_switch
 
 event.OnServerEvent:Connect(function(plr, team)
